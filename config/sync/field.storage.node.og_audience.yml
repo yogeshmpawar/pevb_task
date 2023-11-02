@@ -1,0 +1,20 @@
+uuid: 705f7a41-69dd-4274-8e1a-3f5118b80aa2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - og
+id: node.og_audience
+field_name: og_audience
+entity_type: node
+type: og_standard_reference
+settings:
+  target_type: node
+module: og
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

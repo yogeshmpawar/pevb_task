@@ -53,6 +53,7 @@
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_source_csv": "^3.4",
         "drupal/migrate_tools": "^6.0",
+        "drupal/og": "^1.0@alpha",
         "drupal/pantheon_advanced_page_cache": "^2.1",
         "drupal/paragraphs": "^1.12",
         "drupal/paragraphs_edit": "^2.0",
@@ -151,8 +152,8 @@
             "nodespark/des-connector": {
               "php 8.1 compatibility": "patches/des-connector-php-compat.patch"
             },
-            "drupal/fast_404": {
-              "d.o. #3373845": "patches/fast_404_3373845.patch"
+            "drupal/og": {
+              "OG annotations link fixes": "patches/og_annotation_link_fixes.patch"
             },
             "npm-asset/anchor-js": {
                 "remove font-face": "patches/remove-anchorjs-fontface.patch"

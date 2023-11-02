@@ -21,6 +21,7 @@ module:
   crop: 0
   datetime: 0
   dblog: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   elasticsearch_connector: 0
@@ -54,6 +55,8 @@ module:
   menu_ui: 0
   mysql: 0
   node: 0
+  og: 0
+  og_ui: 0
   options: 0
   page_cache: 0
   pantheon_advanced_page_cache: 0
