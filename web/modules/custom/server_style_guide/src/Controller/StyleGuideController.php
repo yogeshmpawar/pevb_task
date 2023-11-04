@@ -125,6 +125,8 @@ class StyleGuideController extends ControllerBase {
     $build[] = $this->getTextDecorations();
 
     $build[] = $this->getTextStyles();
+    $build[] = $this->getPersonCard();
+    $build[] = $this->getPersonCards();
 
     $element = $this->getAccordion();
     $build[] = $this->wrapElementNoContainer($element, 'Element: Accordion');
@@ -572,6 +574,44 @@ class StyleGuideController extends ControllerBase {
     $element = ['#theme' => 'server_style_guide_text_styles'];
     $element = $this->wrapProseText($element);
     $build[] = $this->wrapElementWideContainer($element, 'Text styles (Prose)');
+
+    return $build;
+  }
+
+  /**
+   * Get Person Card component.
+   *
+   * @return array
+   *   A render array.
+   */
+  protected function getPersonCard(): array {
+    $build = [];
+
+    // For non-prose text we will use the element wrappers.
+    $elements = [];
+
+    $element = ['#theme' => 'server_style_guide_person_card'];
+    $element = $this->wrapProseText($element);
+    $build[] = $this->wrapElementWideContainer($element, 'Person card');
+
+    return $build;
+  }
+
+  /**
+   * Get Person Cards component.
+   *
+   * @return array
+   *   A render array.
+   */
+  protected function getPersonCards(): array {
+    $build = [];
+
+    // For non-prose text we will use the element wrappers.
+    $elements = [];
+
+    $element = ['#theme' => 'server_style_guide_person_cards'];
+    $element = $this->wrapProseText($element);
+    $build[] = $this->wrapElementWideContainer($element, '10 Person cards');
 
     return $build;
   }
