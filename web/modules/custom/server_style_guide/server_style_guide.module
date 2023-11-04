@@ -18,6 +18,16 @@ function server_style_guide_theme() {
     'variables' => [],
   ];
 
+  // A helper twig showing the available text styles.
+  $info['server_style_guide_person_card'] = [
+    'variables' => [],
+  ];
+
+  // A helper twig showing the available text styles.
+  $info['server_style_guide_person_cards'] = [
+    'variables' => [],
+  ];
+
   $info['server_style_guide_header'] = [
     'variables' => [
       'title' => NULL,
