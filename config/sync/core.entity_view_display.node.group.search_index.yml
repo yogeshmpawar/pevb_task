@@ -1,0 +1,63 @@
+uuid: a88dae82-cca6-4361-befb-26ec291099b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.group.body
+    - field.field.node.group.field_featured_image
+    - field.field.node.group.field_publish_date
+    - field.field.node.group.field_tags
+    - field.field.node.group.og_audience
+    - node.type.group
+  module:
+    - datetime
+    - og
+    - user
+id: node.group.search_index
+targetEntityType: node
+bundle: group
+mode: search_index
+content:
+  field_featured_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_publish_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  og_group:
+    type: og_group_subscribe
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  langcode: true
+  og_audience: true
+  search_api_excerpt: true
